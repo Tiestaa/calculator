@@ -1,0 +1,32 @@
+
+
+.greyBut{
+    background-color: rgb(201, 200, 200);
+    color: black;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.orangeBut{
+    background-color: orange;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.blackBut{
+    background-color: rgb(65, 65, 65);
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#but0{
+    border-radius: 42%;
+}
