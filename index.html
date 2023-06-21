@@ -5,40 +5,42 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
-<body>
+<body class="body">
     <table>
-        <tr id="currentNumber"></tr>
         <tr>
-            <td id="AC" class="greyBut"> AC </td>
-            <td id="plus/minus" class="greyBut"> +/- </td>
-            <td id="percent" class="greyBut" > % </td>
-            <td id="division" class="orangeBut"> / </td>
+            <td colspan="4" id="resultPanel" class="result"> 0 </td>
+        </tr>
+        <tr id="firstRow" class="ops">
+            <td id="AC" class="grey But" onclick= "reset()"> AC </td>
+            <td id="plus/minus" class="grey But" onclick="doOP('I')"> +/- </td>
+            <td id="percent" class="grey But" onclick="doOP('%')"> % </td>
+            <td id="division" class="orange But" onclick="doOP('/')"> / </td>
+        </tr>
+        <tr id="firstRow" class="ops">
+            <td id="7" class="black But number" onclick="putNumber(7)"> 7 </td>
+            <td id="8" class="black But number" onclick="putNumber(8)"> 8 </td>
+            <td id="9" class="black But number" onclick="putNumber(9)"> 9 </td>
+            <td id="mult" class="orange But" onclick="doOP('*')"> X </td>
+        </tr>
+        <tr id="firstRow" class="ops">
+            <td id="4" class="black But number" onclick="putNumber(4)"> 4 </td>
+            <td id="5" class="black But number" onclick="putNumber(5)"> 5 </td>
+            <td id="6" class="black But number" onclick="putNumber(6)"> 6 </td>
+            <td id="minus" class="orange But" onclick="doOP('-')"> - </td>
+        </tr>
+        <tr id="firstRow" class="ops">
+            <td id="1" class="black But number" onclick="putNumber(1)"> 1 </td>
+            <td id="2" class="black But number" onclick="putNumber(2)"> 2 </td>
+            <td id="3" class="black But number" onclick="putNumber(3)"> 3 </td>
+            <td id="plus" class="orange But"  onclick="doOP('+')"> + </td>
         </tr>
         <tr>
-            <td id="7" class="blackBut"> 7 </td>
-            <td id="8" class="blackBut"> 8 </td>
-            <td id="9" class="blackBut" > 9 </td>
-            <td id="mult" class="orangeBut"> X </td>
-        </tr>
-        <tr>
-            <td id="4" class="blackBut"> 4 </td>
-            <td id="5" class="blackBut"> 5 </td>
-            <td id="6" class="blackBut" > 6 </td>
-            <td id="minus" class="orangeBut"> - </td>
-        </tr>
-        <tr>
-            <td id="1" class="blackBut"> 1 </td>
-            <td id="2" class="blackBut"> 2 </td>
-            <td id="3" class="blackBut" > 3 </td>
-            <td id="plus" class="orangeBut"> + </td>
-        </tr>
-        <tr>
-            <td colspan="2" id="but0" class="blackBut"> 0 </td>
-            <td id="." class="blackBut"> . </td>
-            <td id="equal" class="orangeBut"> = </td>
+            <td colspan="2" id="0but" class="black But number" onclick="putNumber(0)"> 0 </td>
+            <td id="." class="black But" onclick="startFloat()"> . </td>
+            <td id="equal" class="orange But" onclick="eq()"> = </td>
         </tr>
     </table>
+    <script src="script.js"></script>
 </body>
 
 </html>
